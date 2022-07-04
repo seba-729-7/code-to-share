@@ -1,0 +1,56 @@
+.bg-dark{
+    background-color: rgba(23,23,108,0.9) !important;
+}
+
+#lupa{
+    width: 30px !important;
+    height: 24px !important;
+}
+
+#email{
+    width: 30px !important;
+    height: 24px !important;
+}
+
+#graph{
+    width: 140px !important;
+    height:140px !important;
+}
+
+p{
+    text-align: justify;
+}
+
+.image{
+    border: 1px solid;
+    border-radius: 100%;
+    transition: all 0.5s;
+    z-index: 99;
+}
+
+.image:hover{
+    transform: scale(1.1);
+    border: 1px solid #f0f0f0;
+}
+
+.rowxcolumn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 575px){
+    #emailText{
+        display: none;
+    }
+    .rowxcolumn{
+        flex-direction: column;
+    }
+    .col-8{
+        width: 100% !important;
+    }
+    #mailTo{
+        padding-top: 1rem !important;
+    }
+}

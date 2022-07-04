@@ -1,0 +1,40 @@
+#lupa{
+    width: 30px !important;
+    height: 24px !important;
+}
+
+#email{
+    width: 30px !important;
+    height: 24px !important;
+}
+
+#graph{
+    width: 140px !important;
+    height:140px !important;
+}
+
+p{
+    text-align: justify;
+}
+
+.rowxcolumn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 575px){
+    #emailText{
+        display: none;
+    }
+    .rowxcolumn{
+        flex-direction: column;
+    }
+    .col-8{
+        width: 100% !important;
+    }
+    #mailTo{
+        padding-top: 1rem !important;
+    }
+}

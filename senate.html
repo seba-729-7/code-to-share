@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House Data</title>
-    <!-- CSS only -->
+    <title>Senate Data</title>
+   <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link href="style-house.css" rel="stylesheet">
+    <link href="style-senate.css" rel="stylesheet">
 </head>
 <body class="pb-4">
     <header>
@@ -28,8 +28,8 @@
                     <a class="nav-link" href="index.html">Home</a>
                     <a class="nav-link dropdown-toggle" data-bs-target="#congressCollapse" data-bs-toggle="collapse" href="#">Congress</a>
                     <section class="collapse" id="congressCollapse">
-                        <a class="nav-link ps-3" href="senate.html">Senate</a>
-                        <a class="nav-link ps-3 active" href="#" aria-current="page">House</a>
+                        <a class="nav-link ps-3 active" href="#" aria-current="page">Senate</a>
+                        <a class="nav-link ps-3" href="house.html">House</a>
                     </section>
                 </div>
             </section>
@@ -102,27 +102,29 @@
                 <option value="WY">Wyoming - WY</option>
             </select>
         </section>
-        <table class="table table-striped table-hover">
-            <thead>
-            <tr>
-                <th class="text-center" scope="col">Name</th>
-                <th class="text-center" scope="col">Party</th>
-                <th class="text-center" scope="col">State</th>
-                <th class="text-center" scope="col">Years in office</th>
-                <th class="text-center" scope="col">%Votes w/Party</th>
-            </tr>
-            </thead>
-            <tbody id="table-tbody">
-            </tbody>
-        </table>
+        <section>
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th class="text-center" scope="col">Name</th>
+                    <th class="text-center" scope="col">Party</th>
+                    <th class="text-center" scope="col">State</th>
+                    <th class="text-center" scope="col">Years in office</th>
+                    <th class="text-center" scope="col">%Votes w/Party</th>
+                </tr>
+                </thead>
+                <tbody id="table-tbody">
+                </tbody>
+            </table>
+        </section>
     </main>
-    <footer class="bg-dark text-center text-lg-start fixed-bottom">
+    <footer class="bg-dark text-center fixed-bottom">
         <div class="text-center p-2 text-white">
             &#169;2021 Data Insight Group | All rights reserved
         </div>
     </footer>
-    <script src="house.js"></script>
-    <script src="house-main.js"></script>
+    <script src="senate.js"></script>
+    <script src="main.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
