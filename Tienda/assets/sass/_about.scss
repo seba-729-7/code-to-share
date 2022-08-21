@@ -1,0 +1,90 @@
+
+/*-----------------main_about-----------------------*/
+
+.main{
+    &_section {
+    display: block;
+    width: auto;
+    height: 350px;
+    background-color: $fond;
+    color: white;
+
+}
+    &_image{
+        max-width: 450px;
+        float: right;
+        margin-right: 200px;
+        overflow: hidden;
+
+    }
+
+    &_about{
+        width: 100%;
+        height: 700px;
+        font-family: $font;
+        background-color: $fond;
+        color: $text;
+        @include flex (none,space-between,none,none,none);
+        @media (max-width: $netbook) {
+
+            @include flex(column,none,none,none,none);
+    }
+    
+    @media (max-width: $tablet) {
+    
+            @include flex(column,none,none,none,none);  }
+    
+    @media (max-width: $smartphones) {
+    
+            @include flex(column,none,none,none,none);
+    
+    }
+
+    }
+    &_foto{
+        width: 450px;
+        float: right;
+        margin-left: 150px;
+        overflow: hidden;
+        &:hover{
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+
+    @media (max-width: $netbook) {
+
+            @include flex(column,center,none,none,none);
+            padding-left: 60px;
+            margin-bottom: 60px;
+    }
+
+    @media (max-width: $tablet) {
+
+            @include flex(column,center,none,none,none);
+        padding-left: 60px;
+    margin-bottom: 60px;  }
+
+    @media (max-width: $smartphones) {
+
+            @include flex(column,center,none,none,none);
+            padding-left: 60px;
+            margin-bottom: 60px;
+}
+
+    .container {
+        @include flex(column,flex-start,flex-start,none,none);
+        padding-right: 15px;
+        width: auto;
+        height: auto;
+        flex: 1;
+
+
+        &_p {
+            @include flex (column,flex-start,flex-start,none,none);
+            font-weight: bold;
+            margin-right: 15px;
+            margin-bottom: 30px;
+            font-family: $font;
+            margin-top: 20px;
+        }
+    } }}

@@ -1,0 +1,50 @@
+/*----------------------product-----------------*/
+.main_product {
+    background-color: rgb(50, 49, 49);
+    &_container{
+    background: rgb(50, 49, 49);
+
+}
+
+
+
+.card{
+height: 550px !important;
+margin-top: 1rem !important;
+margin-bottom: 1rem !important;
+
+
+&_body {
+    @include flex(column, space-between, none, flex-start, none) ;
+
+    min-height: 150px !important;
+    color: $primary;
+    background-color: #2e0249;
+}
+&-img-top{
+width:100% !important;
+height: 400px !important;
+object-fit: contain !important;
+background-color: rgb(33, 37, 41);
+}
+
+.carrito{
+    width: 40px;
+    height: 40px;
+
+}
+.btn{
+    background-color:$secondary !important;
+    border-color: $secondary !important;
+    width: 100% !important;
+
+    &:hover{
+        background-color: #561480 !important;
+        cursor: pointer;
+    }
+    &-primary{
+        background-color:$secondary !important;
+        border-color: $secondary !important;
+        }
+}
+    }  }

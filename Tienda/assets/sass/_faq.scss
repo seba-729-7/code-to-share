@@ -1,0 +1,53 @@
+/*main-faq*/
+.main_faq {
+    background-color: #1b1a17;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center !important;
+    @media (max-width: $tablet) {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+
+    }
+    @media (max-width:$smartphones) {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+
+    }
+    &_section1 {
+        height: auto;
+        width: 400px;
+        font-size: 10px;
+        color: #e8e8e8;
+        word-break: break-word;
+        font-family: "Poppins", sans-serif;
+        display: inline-block;
+        overflow: hidden;
+    }
+}
+
+.carousel { 
+ &-item2 {
+    width: 300px !important;
+    height: 300px !important;
+
+}
+&-inner{
+    width: 450px !important;
+    @media (max-width:$smartphones) {
+       width: 350px !important;
+       height: 233.33px !important;
+    }
+}
+}
+
+.enlace{
+    color: $primary !important;
+    &:hover{
+        color: $secondary !important;
+    }
+}

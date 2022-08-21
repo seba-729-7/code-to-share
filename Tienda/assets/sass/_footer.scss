@@ -1,0 +1,259 @@
+/*------------FOOTER------------------------*/
+.footer {
+    width: auto;
+    height: 250px;
+    background-color: $secondary !important;
+    opacity: 0.9;
+    color: $primary !important;
+    @include flex (none, center, none, none, none);
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+
+    &_ul {
+        @include flex (row, none, none, center, none);
+        list-style: none;
+        margin-bottom: 0px !important;
+        &_p{
+            margin-bottom: 0px !important;
+        }
+    }
+
+
+    &_nav {
+        @include flex (none, none, none, flex-end, 2);
+        padding-right: 50px !important;
+    }
+
+    &_image3 {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border-color: #161616 !important;
+
+    }
+
+    &_redes {
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin: 20px;
+        transition: all 0.4s ease-out;
+        border-radius: 50%;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 4px 30px 16px 0px rgba(50, 50, 50, 0.45);
+            transform: translateY(-20px);
+        }
+
+    }
+
+    &_product {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary;
+        width: 100%;
+        color: $secondary;
+
+        &_lista {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: none;
+            background-color: $primary;
+            width: 100%;
+            padding: 1rem 2rem 0rem 2rem;
+            @media (max-width:$smartphones){
+                flex-direction: column;
+                    align-items: center;
+                    width: fit-content;
+                    justify-content: space-between;
+            }
+            @media (max-width:$tablet)
+                {
+                    flex-direction: column;
+                    align-items:center;
+                    width: fit-content;
+                    justify-content: space-between;
+                }
+                @media (max-width:$netbook)
+                {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: none;
+                }
+
+            &_item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @media (max-width:$smartphones)
+                {
+                    flex-direction: column;
+                    align-items: center;
+                    width: fit-content;
+                    justify-content: space-between;
+
+                }
+                @media (max-width:$tablet)
+                {
+                    flex-direction: column;
+                    align-items: center;
+                    width: fit-content;
+                    justify-content: space-between;
+                }
+                @media (max-width:$netbook)
+                {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                &_imagen {
+                    padding-right: 15px;
+                    height: 40px;
+                    width: 56px;
+                    object-fit: scale-down;
+                    background-color: $primary;
+                    border-radius: 40%;
+                    transition: all 0.4s ease-out;
+                    @media (max-width:$smartphones)
+                        {
+                            width: 50px;
+                            object-fit: scale-down;
+                            align-items: flex-start;
+                            display: flex;
+                            margin-right: 60px;
+                        }
+                        @media (max-width:$tablet)
+                        {
+                            width: 50px;
+                            object-fit: scale-down;
+                            align-items: flex-start;
+                            display: flex;
+                            margin-right: 60px;
+                        }
+
+
+                    &:hover {
+                        cursor: pointer;
+                        box-shadow: 4px 30px 16px 0px $primary;
+                        transform: translateY(-20px);
+                    }
+                }
+            }
+                &_texto{
+                    display: flex;
+                    justify-content: space-between;
+                    @media (max-width:$netbook)
+                    {
+                        display: flex;
+                        justify-content: space-between; }
+                    @media (max-width:$tablet)
+                    {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: fit-content;
+                        font-size: 10px;
+                    }
+                    @media (max-width:$smartphones)
+                    {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: fit-content;
+                        font-size: 10px;
+                    }
+
+                &_h3{
+                        display: block;
+                        font-size: 1.33em;
+                        margin-block-start: 1em;
+                        margin-block-end: 1em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                        font-weight: bold;
+                        @media (max-width:$netbook)
+                        {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            width: fit-content;
+                            font-size: 15px;
+                        }
+                        @media (max-width:$tablet)
+                        {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            width: fit-content;
+                            font-size: 10px;
+                        }
+                        @media (max-width:$smartphones)
+                        {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            width: fit-content;
+                            font-size: 10px;
+                        }
+
+
+                    }
+                    &_h4{
+                        display: block;
+                        margin-block-start: 1.17em;
+                        margin-block-end: 1em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                        @media (max-width:$netbook)
+                        {
+
+                            width: fit-content;
+                            font-size: 15px;
+                        }
+                        @media (max-width:$tablet)
+                        {
+
+                            width: fit-content;
+                            font-size: 10px;
+                        }
+                        @media (max-width:$smartphones)
+                        {
+
+                            width: fit-content;
+                            font-size: 10px;
+                        }
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+    .link2 {
+        text-decoration: none;
+        background-position: 0% 100%;
+        background-size: 0% 2px;
+        transition: background-size 0.3s;
+        color: $primary !important;
+        font-size: 100%;
+        margin: 3px;
+        font-family: "Poppins", sans-serif;
+
+        &:hover,
+        :focus {
+            background-size: 100% 2px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .footer_ul {
+            @include flex(none, column, none, none, none);
+            list-style: none;
+        }
+    }
+

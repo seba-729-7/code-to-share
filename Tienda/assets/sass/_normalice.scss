@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --bs-link-hover-color: variable.$primary !important;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28248, 181, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+
+}
+body{
+    &::-webkit-scrollbar {
+    width: 12px;
+}
+
+    &::-webkit-scrollbar-track {
+    background: #212121;
+}
+
+    &::-webkit-scrollbar-thumb {
+    background-color: #10002b;
+    border-radius: 20px;
+    border: 3px solid #2e0249;
+}
+    }
+/*----------------FLECHA-BOTON----------------------*/
+.float{
+    position:fixed;
+	width:40px;
+	height:40px;
+	bottom:40px;
+	right:40px;
+	background-color:$secondary;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px $secondary;
+    z-index:100;
+    &:hover {
+	text-decoration: none;
+	color: $secondary;
+    background-color:$primary;
+    @media (max-width:$smartphones) {
+        font-size: 14px;
+		padding: 12px 20px;
+		bottom: 20px;
+		right: 20px;
+        &:hover {
+            text-decoration: none;
+            color: $secondary;
+            background-color:$primary;
+    }
+    @media (max-width:$tablet) {
+        font-size: 14px;
+		padding: 12px 20px;
+		bottom: 20px;
+		right: 20px;
+        &:hover {
+            text-decoration: none;
+            color: $secondary;
+            background-color:$primary;
+    }
+}
+    &-flecha{
+    margin-top:16px;
+}
+
+} } }

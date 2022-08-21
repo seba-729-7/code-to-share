@@ -1,0 +1,109 @@
+
+
+
+/*----------------------header---------------*/
+.header
+{
+    &_container {
+    background-image: url(../img/scene00.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    width: auto;
+    height: 400px;
+    min-height: 50rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    @media (max-width:$smartphones) {
+        background-image: url(../img/fondo-mas-chico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 478;
+    height: 300px;
+    min-height: 20rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    }
+    @media (max-width:$tablet) {
+        background-image: url(../img/fondo-mas-chico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: cover;
+    height: 728px;
+    min-height: 20rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    }
+    @media (max-width:$netbook) {
+        background-image: url(../img/scene00.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: 1000px;
+    min-height: 20rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    }
+}
+    &_h1{
+    text-align: center;
+    color: $primary;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    margin-top: 300px;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+    font-size: 250%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    &:hover,:focus{
+        background-size: 100% 4px;
+    }
+    }
+    &_h2{
+        text-align: center;
+    color: $primary;
+    font-family: "Poppins", sans-serif;
+    }
+    }
+
+.nav{
+    &_ul {
+    display: flex;
+    justify-content: flex-end;
+}
+    &_li {
+    text-decoration: none;
+    list-style: none;
+    color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: inherit;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+    &-link {
+    text-decoration: none !important;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100% !important;
+    background-repeat: no-repeat !important;
+    background-size: 0% 2px !important;
+    transition: background-size 0.3s !important;
+    color: $primary!important;
+    font-family: "Poppins", sans-serif !important;
+    &:hover,:focus{
+        background-size: 100% 2px !important;
+    }
+}
+ }
