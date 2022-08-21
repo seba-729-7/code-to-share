@@ -63,6 +63,7 @@ body::-webkit-scrollbar-thumb {
   background-image: url(../img/scene00.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center; /* cambio */
   background-attachment: fixed;
   width: auto;
   height: 400px;
@@ -75,21 +76,26 @@ body::-webkit-scrollbar-thumb {
   color: #f8b500;
   font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
-  margin-top: 300px;
   text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size 0.3s;
-  font-size: 250%;
+  font-size: 4rem;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
-  align-self: flex-start; }
-  .header_h1:hover, .header_h1 :focus {
-    background-size: 100% 4px; }
-
+  align-self: flex-start;
+  display:flex;
+  flex-direction: column; }
+.header_h1::after {
+  content:"";
+  display:block;
+  align-self: center;
+  height: 3px;
+  background-color: #f8b500;
+  width: 0px;
+  transition: width .25s;
+  line-height: 100px;
+}
+.header_h1:hover::after {
+  width: 270px;
+}
 .header_h2 {
   text-align: center;
   color: #f8b500;
@@ -195,6 +201,7 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center; /* cambio */
   width: auto;
   height: 400px;
   min-height: 50rem;
