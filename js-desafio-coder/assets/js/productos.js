@@ -1,3 +1,4 @@
+//productos
 const productos = [
     {
         id:1,
@@ -41,11 +42,27 @@ const productos = [
         cantidad:1
     },
     {
-        id:5,
+        id:6,
         nombre:"Mate",
         desc:"Mate de ceramica de color rojo o rosa",
         precio:800,
         img:"./assets/img/matero.jpg",
+        cantidad:1
+    },
+    {
+        id:7,
+        nombre:"Plato",
+        desc:"Plato grande de ceramica",
+        precio:1500,
+        img:"./assets/img/platogrande.jpg",
+        cantidad:1
+    },
+    {
+        id:8,
+        nombre:"Platos",
+        desc:"Dos platos de ceramica chicos cuadrados",
+        precio:2000,
+        img:"./assets/img/platos.jpg",
         cantidad:1
     },
 ]

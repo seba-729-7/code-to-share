@@ -3,6 +3,7 @@ const abrirCarrito = document.getElementById("open")
 const cerrarCarrito = document.getElementById("cerrar")
 const modalCarrito = document.querySelector(".modal-carrito")
 
+
 abrirCarrito.addEventListener("click", ()=>{
     modalContendor.classList.toggle("modal-active")
 } )
